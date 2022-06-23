@@ -173,11 +173,20 @@ header a.active:after {
     transition: 1s ease;
 }
 
-.cube {
-    width: 20px;
-    height: 20px;
-    background: #dc3545;
+
+
+
+.trail {
+    /* className for the trail elements */
     position: absolute;
-    z-index: 9999;
+    height: 10px;
+    width: 10px;
     border-radius: 25px;
+    background:red;
+    z-index: 9999;
 }
+
+/* #divFly{
+    position:absolute;
+    z-index: 9999;
+} */
