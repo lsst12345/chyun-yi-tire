@@ -114,12 +114,12 @@ window.onload = function () {
     // The Dot.prototype.draw() method sets the position of 
     // the object's <div> node
     Dot.prototype.draw = function () {
-        this.node.style.left = this.x + "px";
-        this.node.style.top = this.y + "px";
+        this.node.style.left = this.x + 10 + "px";
+        this.node.style.top = this.y + 10 + "px";
     };
 
     // Creates the Dot objects, populates the dots array
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < 15; i++) {
         var d = new Dot();
         dots.push(d);
     }
@@ -161,7 +161,17 @@ window.onload = function () {
     animate();
     
 
-
+    // function DivFlying() {
+    //     var div = document.getElementById("divFly");
+    //     if (!div) {
+    //         return;
+    //     }
+    //     var intX = window.event.clientX;
+    //     var intY = window.event.clientY;
+    //     div.style.left = intX + "px";
+    //     div.style.top = intY + "px";
+    // }
+    // document.onmousemove = DivFlying;
 
 
 
